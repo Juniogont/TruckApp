@@ -20,5 +20,17 @@ namespace Truck.Domain.Entities
         [Display(Name = "Ano Modelo")]
         [AnoModelo]
         public int AnoModelo { get; set; }
+        public Caminhao(string placa, string modelo, int anoFabricacao, int anoModelo)
+        {
+            Placa = placa;
+            Modelo = modelo;
+            AnoFabricacao = anoFabricacao;
+            AnoModelo = anoModelo;
+        }
+
+        public Caminhao()
+        { }
+
+       
     }
 }
